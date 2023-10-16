@@ -1,0 +1,26 @@
+ul{
+  display: inline-flex;
+    padding: 22px 0 22px 0px;
+    gap: 55px;
+    color: white;
+    :hover{
+      color: #FFD050 !important;
+    }
+ 
+}
+.nav-btn{
+  padding: 16px 48px;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--Light, #FFF);
+  color: black;
+}
+
+.nav{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
