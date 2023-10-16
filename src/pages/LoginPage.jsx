@@ -1,4 +1,4 @@
-import {  Input, Form } from "antd";
+import { Button, Input, Form } from "antd";
 import { useNavigate } from "react-router-dom";
 import { request } from "../server/request";
 import { useContext, useState } from "react";
@@ -9,7 +9,7 @@ import "./style.scss"
 const LoginPage = () => {
   const { setIsAuthenticated, setRole } = useContext(GeneralContextInfo);
   const navigate = useNavigate();
-  const [ setBtnLoading] = useState(false);
+  const [btnLoading, setBtnLoading] = useState(false);
   const [form] = Form.useForm();
   const onFinish = async (values) => {
     try {
@@ -87,10 +87,12 @@ const LoginPage = () => {
           </Form.Item>
 
           <Form.Item>
-    
-              <button className="btn3">Login</button>
+            <Button  className="btn3 ant-btn "
+              loading={btnLoading}
+            >
+              <button>Login</button>
               
-          
+            </Button>
           </Form.Item>
         </Form>
       </div>

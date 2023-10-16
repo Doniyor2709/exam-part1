@@ -92,7 +92,7 @@ const PostPage = () => {
         <Loading />
       ) : (
         <Fragment>
-          <h2 className="py-4 font-semibold text-xl sm:text-2xl">Comments</h2>
+          <h2 className="py-4 font-semibold text-xl sm:text-2xl"></h2>
         </Fragment>
       )}
     </div>

@@ -72,9 +72,7 @@ const HomePage = () => {
             <p className="text-sm sm:text-base">
               By
               <span className="text-yellow-500">
-                {" "+latestPost?.user?.first_name +
-                  " " +
-                  latestPost?.user?.last_name+" "}
+                {" "+latestPost?.user?.first_name}
               </span>
               |{" "}
               {latestPost?.createdAt?.split("T")[0]}

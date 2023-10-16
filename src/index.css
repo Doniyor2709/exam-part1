@@ -47,19 +47,28 @@
 }
 
 .ant-btn {
-  background: rgb(0, 119, 255) !important;
+  background: yellow !important;
   color: white !important;
 }
 
 .ant-btn:hover {
-  background: rgb(0, 106, 255) !important;
-  color: white !important;
+  background: rgba(255, 255, 255, 0.253) !important;
+  color: yellow !important;
   transform: scale(1.01);
+  border: 1px solid yellow !important;
 }
 
 nav {
   z-index: 999 !important;
 }
+
+
+@media (max-width:500px) {
+  .nav{
+    flex-direction: column;
+  }
+}
+
 
 .text {
   overflow: hidden;

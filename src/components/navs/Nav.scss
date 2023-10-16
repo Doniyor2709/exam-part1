@@ -1,5 +1,5 @@
 ul{
-  display: inline-flex;
+  display: flex;
     padding: 22px 0 22px 0px;
     gap: 55px;
     color: white;
@@ -22,5 +22,11 @@ ul{
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media (max-width:500px) {
+  ul{
+    flex-direction: column;
+  }
 }
 
