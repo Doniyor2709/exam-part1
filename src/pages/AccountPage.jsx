@@ -2,6 +2,8 @@ import { Button, Form, Input, message, Tabs } from "antd";
 import { useCallback, useEffect, useState } from "react";
 import { request } from "../server/request";
 
+import "./style.scss"
+
 const AccountPage = () => {
   const items = [
     {
@@ -14,10 +16,12 @@ const AccountPage = () => {
       label: "Edit Password",
       children: <PasswordEdit />,
     },
+    
   ];
+
   return (
-    <div className="pt-5 containr">
-      <Tabs defaultActiveKey="1" items={items} />
+    <div className="pt-5 container">
+      <Tabs items={items} />
     </div>
   );
 };
@@ -26,7 +30,6 @@ export default AccountPage;
 
 const AccountEdit = () => {
   
-  const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
   const getUser = useCallback(async () => {
     try {
@@ -44,14 +47,12 @@ const AccountEdit = () => {
   const submit = async () => {
     const res = await form.getFieldsValue();
     try {
-      setLoading(true);
+
       await request.put("auth/details", res);
-      message.success("Edited succesfully");
+      message.success("Edited !");
     } catch (err) {
       console.log(err.message);
-    } finally {
-      setLoading(false);
-    }
+    } 
   };
 
   return (
@@ -59,7 +60,7 @@ const AccountEdit = () => {
       <Form
         labelCol={{ span: 7 }}
         form={form}
-        name="account"
+        name="Account"
         style={{ width: "100%" }}
         onFinish={submit}
         autoComplete="off"
@@ -84,13 +85,13 @@ const AccountEdit = () => {
 
         <Form.Item label="Phone Number" name="phoneNumber">
           <Input
-            placeholder="+998999999999"
+            placeholder="+998"
             style={{ borderRadius: "0px", padding: "6px 12px" }}
           />
         </Form.Item>
 
         <Form.Item label="Address" name="address">
-          <Input style={{ borderRadius: "0px", padding: "6px 12px" }} />
+          <Input placeholder="qwerty@gmail.com" style={{ borderRadius: "0px", padding: "6px 12px" }} />
         </Form.Item>
 
         <Form.Item
@@ -112,9 +113,8 @@ const AccountEdit = () => {
             style={{ width: "200px", borderRadius: "0px", padding: "6px 12px" }}
             type="primary"
             htmlType="submit"
-            loading={loading}
           >
-            Submit
+            Edit
           </Button>
         </Form.Item>
       </Form>

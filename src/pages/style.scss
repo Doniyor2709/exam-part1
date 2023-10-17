@@ -5,3 +5,26 @@
   border: 1px solid yellow;
 }
 
+
+.ant-tabs-ink-bar{
+  background-color: rgba(0, 0, 0, 0) !important;
+
+}
+
+
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-tabs-top >.ant-tabs-nav::before{
+  border-bottom: 1px solid #f0f0f000;
+}
+
+.ant-tabs-tab-btn{
+  color: rgba(238, 211, 6, 0.884) !important;
+}
+
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+  color: rgb(22, 1, 1) !important;
+}
+
+:where(.css-dev-only-do-not-override-1jr9qlj).ant-tabs .ant-tabs-tab+.ant-tabs-tab {
+  margin: 0 0 0 1222px !important;
+}
+

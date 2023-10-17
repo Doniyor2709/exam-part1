@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import './style.scss'
+import "./style-cards.scss";
 import image from "../../assets/images/Icon.png";
 
 import { useNavigate } from "react-router-dom";

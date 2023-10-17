@@ -24,7 +24,7 @@ const LoginPage = () => {
       if (role === "") {
         navigate("/");
       } else if (role === "user") {
-        navigate("/my-blog");
+        navigate("/user" );
       }
     } catch (err) {
       console.log(err.message);
@@ -35,7 +35,7 @@ const LoginPage = () => {
   return (
     <div
       style={{ height: "calc(100vh - 70px)" }}
-      className="flex flex-col justify-center containr"
+      className="flex flex-col justify-center container"
     >
       <h2 className="text-center text-4xl sm:text-5xl font-semibold py-4 pt-10">
         Login

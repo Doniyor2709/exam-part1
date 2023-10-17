@@ -36,7 +36,7 @@ const CategoryPage = () => {
           <h2 className="sm:text-4xl text-3xl font-bold pb-2">
             {category?.name}
           </h2>
-          <p className="text-[#6D6E76] text-sm sm:text-base containr">
+          <p className="text-[#6D6E76] text-sm sm:text-base container">
             {category?.description}
           </p>
           <p className="text-[#232536] text-sm sm:text-base font-semibold pt-3">
@@ -45,7 +45,7 @@ const CategoryPage = () => {
         </header>
       )}
 
-      <section className="py-6 containr">
+      <section className="py-6 container">
         <div className="mb-5">
           <input
             className="w-full border-2 outline-none py-2 px-5"

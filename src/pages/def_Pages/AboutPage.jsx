@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 const AboutPage = () => {
   return (
-    <div className="pt-10 containr">
+    <div className="pt-10 container">
       <section className="flex justify-between bg-[#F4F0F8] p-6 sm:p-14 md:flex-row flex-col gap-11">
         <div>
           <h3 className="text-xs sm:text-sm font-semibold">Our mision</h3>

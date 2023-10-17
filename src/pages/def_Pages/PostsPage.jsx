@@ -41,7 +41,7 @@ const PostsPage = () => {
     setPage(current);
   };
   return (
-    <div className="pt-10 containr">
+    <div className="pt-10 container">
       <div>
         <input
           onChange={searchPost}

@@ -6,13 +6,13 @@
   font-family: "Inter", sans-serif;
 }
 
-.containr {
+.container {
   width: 90%;
   margin: 0 auto;
 }
 
 @media (min-width: 1500px) {
-  .containr {
+  .container {
     width: 1400px;
   }
 }

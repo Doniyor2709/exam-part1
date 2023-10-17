@@ -22,7 +22,7 @@ const HomePage = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     responsive: [
       {
         breakpoint: 1024,
@@ -59,7 +59,7 @@ const HomePage = () => {
         {loading ? (
           <Loading />
         ) : (
-          <div className="containr text-white">
+          <div className="container text-white gap-3">
             <p className="font-extralight md:text-xs text-[10px]">
               POSTED ON
               <span className="font-semibold">
@@ -89,7 +89,7 @@ const HomePage = () => {
           </div>
         )}
       </header>
-      <div className="containr carausel">
+      <div className="container carausel">
         <div className="allposts">
           <h2>Popular blogs</h2>
         </div>
@@ -109,7 +109,7 @@ const HomePage = () => {
         )}
       </div>
 
-      <div className="containr choose">
+      <div className="container choose">
         <h2>
           Choose A Catagory
         </h2>

@@ -4,14 +4,14 @@ import { GeneralContextInfo } from "./contexts/GeneralContext";
 
 import UserLayout from "./components/layouts/UserLayout";
 
-
-import HomePage from "./pages/FrondPages/HomePage";
+import UserPage from "./pages/userPages/UserPage";
+import HomePage from "./pages/def_Pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
-import AboutPage from "./pages/FrondPages/AboutPage";
-import CategoryPage from "./pages/FrondPages/CategoryPage";
-import PostsPage from "./pages/FrondPages/PostsPage";
-import PostPage from "./pages/FrondPages/PostPage";
-import RegisterPage from "./pages/FrondPages/RegisterPage";
+import AboutPage from "./pages/def_Pages/AboutPage";
+import CategoryPage from "./pages/def_Pages/CategoryPage";
+import PostsPage from "./pages/def_Pages/PostsPage";
+import PostPage from "./pages/def_Pages/PostPage";
+import RegisterPage from "./pages/def_Pages/RegisterPage";
 import LoginPage from "./pages/LoginPage";
 import AccountPage from "./pages/AccountPage";
 
@@ -32,6 +32,7 @@ const App = () => {
           <Route path="about" element={<AboutPage />} />
           <Route path="register" element={<RegisterPage />} />
           <Route path="login" element={<LoginPage />} />
+          <Route path="/user" element={<UserPage />} />
           <Route
             path="account"
             element={
@@ -42,8 +43,11 @@ const App = () => {
               )
             }
           />
+          
         </Route>
+        
         <Route path="*" element={<NotFoundPage />} />
+        
       </Routes>
     </BrowserRouter>
   );

@@ -7,10 +7,12 @@ export const ROLE = "role";
 export const EXPIRE = "expire";
 export const API = "https://ap-blog-backend.up.railway.app/";
 export const ENDPOINT = API+"api/v1/";
-export const URL_IMG = "https://loremflickr.com/320/240?random=3"
+export const URL_IMG = API + "upload/"
 
 export const logOut = () =>{
     Cookies.remove(ROLE);
     Cookies.remove(TOKEN);
     Cookies.remove(EXPIRE);
 }
+
+// https://loremflickr.com/320/240?random=3

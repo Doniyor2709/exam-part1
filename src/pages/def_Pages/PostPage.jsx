@@ -50,7 +50,7 @@ const PostPage = () => {
   }, [getPost, getComments]);
 
   return (
-    <div className="containr pt-10">
+    <div className="container pt-10">
       {loading ? (
         <Loading />
       ) : (

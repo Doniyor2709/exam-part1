@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
-import "./style.scss";
+import "./style-cards.scss";
 import { URL_IMG } from "../../const/const";
 
 const PostCard = ({ el }) => {
@@ -10,12 +10,12 @@ const PostCard = ({ el }) => {
     navigate(`/posts/${id}`);
   };
   return (
-    <div className="selector" onClick={() => enterThisPost(_id)}>
-      <img
+    <div className="selector border " onClick={() => enterThisPost(_id)}>
+      <img className="sell-img"
         src={URL_IMG + photo?._id + "." + photo?.name?.split(".")[1]}
         alt="Post Img"
       />
-      <div className="texts">
+      <div className="texts pt-5 px-5 py-5">
         <p className="textw">
           {category?.name.toUpperCase()}
         </p>

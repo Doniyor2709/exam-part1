@@ -3,7 +3,7 @@ import './style.scss'
 const UserFooter = () => {
   return (
     <footer>
-    <div className=" containr elements">
+    <div className=" container elements">
       <p className="foot-text">
         Finstreet 118 2561 Fintown <br /> Hello@finsweet.com 020 7993 2905
       </p>

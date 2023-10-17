@@ -1,5 +1,6 @@
 ul{
   display: flex;
+  align-items: center;
     padding: 22px 0 22px 0px;
     gap: 55px;
     color: white;
@@ -14,19 +15,55 @@ ul{
   gap: 12px;
   background: var(--Light, #FFF);
   color: black;
+  border: 1px solid white;
+  transition: 400ms;
 }
 
+
+.logout{
+  display: flex;
+  align-items: center;
+fill:white !important; 
+}
+.nav-btn:hover{
+  transition: 400ms;
+  background-color: #ffd05000;
+}
 .nav{
   display: flex; 
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  .logo{    
+    max-width:100px !important;
+    min-width:10px !important;
+    height: 20%;
+  }
 }
 
-@media (max-width:500px) {
+body{
+  overflow-x: hidden;
+}
+.d-flex{
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width:800px) {
+  .d-flex{
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width:800px) {
   ul{
     flex-direction: column;
+  }
+  .logo{
+    padding-bottom: 20px;
   }
 }
 
