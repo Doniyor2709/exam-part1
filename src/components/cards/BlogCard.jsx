@@ -8,7 +8,7 @@ const BlogCard = ({ el }) => {
   const { user, title, description,_id ,photo} = el;
   const {first_name,last_name} = user;
   return (
-    <div className="slider-mar">
+    <div className="slider-mar ">
       <Link to={`posts/${_id}`}>
       <img src={URL_IMG+photo?._id + "." + photo}  alt="Img" />
       <div className="line">
@@ -19,9 +19,9 @@ const BlogCard = ({ el }) => {
           </span>
           l oct 16, 2023
         </p>
-        <h2>{title}</h2>
+        <h2 className="texted">{title}</h2>
         <p>{description} </p>
-        <button className="btn-primary">More ➮</button>
+        <button >More 📔</button>
       </div>
       </Link>
     </div>

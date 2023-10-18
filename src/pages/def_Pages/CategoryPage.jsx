@@ -40,7 +40,7 @@ const CategoryPage = () => {
             {category?.description}
           </p>
           <p className="text-[#232536] text-sm sm:text-base font-semibold pt-3">
-            BLOG{">"} {category?.name}
+            <a href="/">Home</a>{">"} {category?.name}
           </p>
         </header>
       )}

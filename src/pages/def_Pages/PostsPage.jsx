@@ -64,13 +64,12 @@ const PostsPage = () => {
                   <PostCard key={el._id} el={el} />
                 ))}
               </div>
-              <div className="text-center py-5">
+              <div className=" text-center py-5">
                 <Pagination
                   defaultCurrent={page}
                   total={total}
                   pageSize={LIMITPAGE}
                   onChange={onChange}
-                  showSizeChanger={false}
                 />
               </div>
             </Fragment>
@@ -81,7 +80,7 @@ const PostsPage = () => {
             style={{ height: "calc(100vh - 361px" }}
             className="flex justify-center items-center"
           >
-<Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
+            <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
           </div>
         )}
       </div>

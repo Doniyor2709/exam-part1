@@ -49,11 +49,26 @@ line-height: 28px;
   }
 }
 
+.line{
+  button{
+    font-size: 20px;
+    padding-top: 10px;
+    color: rgb(203, 203, 0);
+    transition: 800ms;
+  }
+  button:hover{
+    border-bottom: rgb(203, 203, 0) 1px solid;
+    transition: 800ms;
+  }
+
+}
+
 .element:hover {
   background-color: #FFD050;
 }
 
 .slider-mar{
+  padding-bottom: 100px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   img{
