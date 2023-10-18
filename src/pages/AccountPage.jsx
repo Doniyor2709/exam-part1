@@ -66,32 +66,32 @@ const AccountEdit = () => {
         autoComplete="off"
       >
         <Form.Item label="Firstname" name="first_name">
-          <Input style={{ borderRadius: "0px", padding: "6px 12px" }} />
+          <Input style={{ borderRadius: "10px", padding: "6px 12px" }} />
         </Form.Item>
 
         <Form.Item label="Lastname" name="last_name">
-          <Input style={{ borderRadius: "0px", padding: "6px 12px" }} />
+          <Input style={{ borderRadius: "10px", padding: "6px 12px" }} />
         </Form.Item>
 
         <Form.Item label="UserName" name="username">
-          <Input style={{ borderRadius: "0px", padding: "6px 12px" }} />
+          <Input style={{ borderRadius: "10px", padding: "6px 12px" }} />
         </Form.Item>
 
         <Form.Item label="Info" name="info">
           <Input.TextArea
-            style={{ borderRadius: "0px", padding: "6px 12px" }}
+            style={{ borderRadius: "10px", padding: "6px 12px" }}
           />
         </Form.Item>
 
         <Form.Item label="Phone Number" name="phoneNumber">
           <Input
             placeholder="+998"
-            style={{ borderRadius: "0px", padding: "6px 12px" }}
+            style={{ borderRadius: "10px", padding: "6px 12px" }}
           />
         </Form.Item>
 
         <Form.Item label="Address" name="address">
-          <Input placeholder="qwerty@gmail.com" style={{ borderRadius: "0px", padding: "6px 12px" }} />
+          <Input placeholder="qwerty@gmail.com" style={{ borderRadius: "10px", padding: "6px 12px" }} />
         </Form.Item>
 
         <Form.Item
@@ -103,18 +103,18 @@ const AccountEdit = () => {
             },
           ]}
         >
-          <Input style={{ borderRadius: "0px", padding: "6px 12px" }} />
+          <Input style={{ borderRadius: "10px", padding: "6px 12px" }} />
         </Form.Item>
 
         <Form.Item
           style={{ width: "100%", display: "flex", justifyContent: "center" }}
         >
           <Button
-            style={{ width: "200px", borderRadius: "0px", padding: "6px 12px" }}
+            style={{ width: "200px", borderRadius: "10px", padding: "6px 12px" }}
             type="primary"
             htmlType="submit"
           >
-            Edit
+            Edit   ✏️
           </Button>
         </Form.Item>
       </Form>
@@ -152,11 +152,11 @@ const PasswordEdit = () => {
         autoComplete="off"
       >
         <Form.Item label="CurrentPassword" name="currentPassword">
-          <Input style={{ borderRadius: "0px", padding: "6px 12px" }} />
+          <Input style={{ borderRadius: "10px", padding: "6px 12px" }} />
         </Form.Item>
 
         <Form.Item label="NewPassword" name="newPassword">
-          <Input style={{ borderRadius: "0px", padding: "6px 12px" }} />
+          <Input style={{ borderRadius: "10px", padding: "6px 12px" }} />
         </Form.Item>
 
         <Form.Item
@@ -168,7 +168,7 @@ const PasswordEdit = () => {
             loading={loading}
             style={{
               width: "200px",
-              borderRadius: "0px",
+              borderRadius: "10px",
               padding: "6px 12px",
             }}
           >

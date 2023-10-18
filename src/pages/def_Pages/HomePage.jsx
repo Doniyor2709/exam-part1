@@ -105,7 +105,7 @@ const HomePage = () => {
             </Slider>
           </div>
         ) : (
-          <Empty description="No Categories" />
+          <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
         )}
       </div>
 
@@ -124,7 +124,7 @@ const HomePage = () => {
             </Slider>
           </div>
         ) : (
-          <Empty description="No Posts" />
+          <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
         )}
       </div>
     </Fragment>

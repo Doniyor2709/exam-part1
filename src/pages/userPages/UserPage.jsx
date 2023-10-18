@@ -148,7 +148,7 @@ const UserPage = () => {
             style={{ height: "calc(100vh - 302px" }}
             className="flex justify-center items-center"
           >
-            <Empty description="No Posts" />
+<Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />
           </div>
         )}
       </div>
