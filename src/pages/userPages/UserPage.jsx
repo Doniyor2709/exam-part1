@@ -12,7 +12,6 @@ import {
 import { Fragment, useEffect } from "react";
 import { URL_IMG, LIMITPAGE } from "../../const/const";
 import { Link, useNavigate } from "react-router-dom";
-import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 
 const UserPage = () => {
   const navigate = useNavigate();

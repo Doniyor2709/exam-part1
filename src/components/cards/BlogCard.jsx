@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./style-cards.scss";
+import './style-cards.scss';
 
 import { Link } from "react-router-dom";
 import { URL_IMG } from "../../const/const";
@@ -10,7 +10,7 @@ const BlogCard = ({ el }) => {
   return (
     <div className="slider-mar">
       <Link to={`posts/${_id}`}>
-      <img src={URL_IMG+photo?._id + "." + photo.name?.split(".")[1]} className="" alt="Img" />
+      <img src={URL_IMG+photo?._id + "." + photo}  alt="Img" />
       <div className="line">
         <p>
           By

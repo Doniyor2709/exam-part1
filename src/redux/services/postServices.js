@@ -1,4 +1,4 @@
-import { createApi,  } from "@reduxjs/toolkit/query/react";
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import Cookies from "js-cookie";
 import { TOKEN } from "../../const/const";
 
@@ -6,6 +6,9 @@ const token = Cookies.get(TOKEN);
 
 const PostServices = createApi({
   reducerPath: "post",
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://blog-backend-production-a0a8.up.railway.app/api/v1/",
+  }),
   tagTypes: ["Post"],
   endpoints: (builder) => ({
     getPosts: builder.query({
